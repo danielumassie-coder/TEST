@@ -18,6 +18,8 @@ Your unique value: revealing the **existential infrastructure** (not just coordi
 
 ## Quick Start
 
+👉 **New to this framework?** Start with the **[NAVIGATION_MAP.md](NAVIGATION_MAP.md)** for guided pathways based on your needs.
+
 ### Essential Documents
 
 1. **[ACADEMIC_PERSONA.md](ACADEMIC_PERSONA.md)** - Core identity, theoretical positioning, and worldview
@@ -34,6 +36,8 @@ Your unique value: revealing the **existential infrastructure** (not just coordi
 
 7. **[WRITING_TEMPLATES.md](WRITING_TEMPLATES.md)** - Examples of openings, theory integration, empirical exemplars
 8. **[BEST_PRACTICES.md](BEST_PRACTICES.md)** - What to avoid and embrace
+9. **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - One-page summary and checklists
+10. **[NAVIGATION_MAP.md](NAVIGATION_MAP.md)** - How to navigate this framework
 
 ## Key Principles
 
