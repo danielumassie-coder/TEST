@@ -1,8 +1,58 @@
 # TEST
 
+## Heartwise - Heart Health Tracker
+
+A simple Python application for tracking heart health metrics including heart rate and blood pressure.
+
+### Features
+
+- Track heart rate readings
+- Record blood pressure measurements
+- Add notes to readings
+- View reading history
+- Calculate statistics (average, min, max heart rate)
+- Data persistence using JSON storage
+
+### Quick Start
+
+```bash
+# Run the application
+python3 heartwise.py
+
+# Run tests
+python3 test_heartwise.py
+```
+
+### Usage
+
+The application provides an interactive CLI with the following options:
+
+1. **Add new reading** - Record heart rate, blood pressure, and notes
+2. **View recent readings** - Display reading history
+3. **View statistics** - See heart health statistics
+4. **Exit** - Close the application
+
+### Example
+
+```python
+from heartwise import HeartHealthTracker
+
+# Create tracker instance
+tracker = HeartHealthTracker()
+
+# Add a reading
+tracker.add_reading(heart_rate=72, blood_pressure="120/80", notes="Morning reading")
+
+# Get statistics
+stats = tracker.get_stats()
+print(f"Average heart rate: {stats['average_heart_rate']:.1f} bpm")
+```
+
+---
+
 ## PhD Documentation System
 
-This repository includes a systematic approach for extracting and organizing PhD-relevant content from all documentation.
+This repository also includes a systematic approach for extracting and organizing PhD-relevant content from all documentation.
 
 ### Quick Start
 
