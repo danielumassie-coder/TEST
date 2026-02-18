@@ -1,0 +1,240 @@
+/*
+CSS BASICS TUTORIAL
+====================
+
+CSS (Cascading Style Sheets) is used to style HTML elements.
+It controls colors, fonts, layouts, spacing, and more.
+
+This file teaches you essential CSS concepts.
+
+To use this CSS file, add this line to your HTML <head> section:
+<link rel="stylesheet" href="css_basics.css">
+
+Or you can put CSS directly in HTML using <style> tags.
+*/
+
+/* BASIC SELECTORS */
+
+/* Element selector - styles all <h1> elements */
+h1 {
+    color: #2c3e50;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Class selector - styles elements with class="intro" */
+.intro {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* ID selector - styles element with id="header" */
+#header {
+    background-color: #3498db;
+    padding: 20px;
+    color: white;
+}
+
+/* COLORS */
+
+/* You can use color names, hex codes, or RGB values */
+.color-examples {
+    color: blue;              /* Color name */
+    color: #ff6b6b;          /* Hex code */
+    color: rgb(52, 152, 219); /* RGB */
+    color: rgba(52, 152, 219, 0.5); /* RGBA (with transparency) */
+}
+
+/* TEXT STYLING */
+
+.text-styles {
+    font-size: 16px;
+    font-weight: bold;        /* or normal, lighter, 100-900 */
+    font-style: italic;       /* or normal */
+    text-decoration: underline; /* or none, overline, line-through */
+    text-transform: uppercase; /* or lowercase, capitalize */
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+/* BOX MODEL: margin, border, padding, content */
+
+.box-example {
+    width: 300px;
+    height: 200px;
+    
+    /* Padding: space inside the element */
+    padding: 20px;
+    
+    /* Border: edge of the element */
+    border: 2px solid #333;
+    border-radius: 10px; /* Rounded corners */
+    
+    /* Margin: space outside the element */
+    margin: 20px auto; /* auto centers the element */
+    
+    /* Background */
+    background-color: #ecf0f1;
+}
+
+/* LAYOUT - DISPLAY */
+
+.inline-element {
+    display: inline; /* Stays in line with other elements */
+}
+
+.block-element {
+    display: block; /* Takes full width, starts new line */
+}
+
+.inline-block {
+    display: inline-block; /* Inline but can have width/height */
+    width: 200px;
+}
+
+/* FLEXBOX - Modern layout system */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* or center, flex-start, flex-end */
+    align-items: center; /* or flex-start, flex-end, stretch */
+    gap: 10px; /* Space between items */
+}
+
+.flex-item {
+    flex: 1; /* Items grow equally */
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+/* POSITIONING */
+
+.relative-position {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute-position {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed-position {
+    position: fixed; /* Stays in place when scrolling */
+    bottom: 20px;
+    right: 20px;
+}
+
+/* HOVER EFFECTS */
+
+.button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* RESPONSIVE DESIGN - Media Queries */
+
+/* This CSS applies only when screen is 768px or smaller */
+@media (max-width: 768px) {
+    .responsive-text {
+        font-size: 14px;
+    }
+    
+    .flex-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+
+/* PRACTICE EXAMPLES */
+
+/* Navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Card component */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* EXERCISES */
+
+/*
+Try these exercises:
+1. Create a class called "highlight" that gives text a yellow background
+2. Create a class for a circular profile picture (hint: border-radius: 50%)
+3. Create a button with hover effect that changes color
+4. Create a centered container with max-width of 800px
+5. Create a two-column layout using flexbox
+*/
+
+/* Your CSS here: */
+
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.two-column {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
