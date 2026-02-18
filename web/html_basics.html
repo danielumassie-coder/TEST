@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics - Learn to Code</title>
+</head>
+<body>
+    <!-- 
+        HTML BASICS TUTORIAL
+        =====================
+        
+        HTML (HyperText Markup Language) is the standard language for creating web pages.
+        It structures the content of a webpage using "tags" or "elements".
+        
+        This file teaches you the essential HTML elements.
+    -->
+
+    <!-- HEADINGS: h1 to h6 (h1 is largest, h6 is smallest) -->
+    <h1>Welcome to HTML!</h1>
+    <h2>This is a Level 2 Heading</h2>
+    <h3>This is a Level 3 Heading</h3>
+
+    <!-- PARAGRAPHS -->
+    <p>This is a paragraph. Paragraphs contain text content.</p>
+    <p>You can have multiple paragraphs. Each &lt;p&gt; tag creates a new paragraph.</p>
+
+    <!-- TEXT FORMATTING -->
+    <p>
+        You can make text <strong>bold</strong> or <em>italic</em>.
+        You can also <u>underline</u> text or <mark>highlight</mark> it.
+    </p>
+
+    <!-- LINKS -->
+    <h2>Links</h2>
+    <p>
+        <a href="https://www.google.com">Click here to go to Google</a>
+    </p>
+    <p>
+        <a href="https://www.github.com" target="_blank">Open GitHub in new tab</a>
+    </p>
+
+    <!-- IMAGES -->
+    <h2>Images</h2>
+    <img src="https://via.placeholder.com/300x200" alt="A placeholder image" width="300">
+    <p><em>Note: The 'alt' attribute describes the image for accessibility.</em></p>
+
+    <!-- LISTS -->
+    <h2>Lists</h2>
+    
+    <h3>Unordered List (bullets)</h3>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <h3>Ordered List (numbers)</h3>
+    <ol>
+        <li>Step one</li>
+        <li>Step two</li>
+        <li>Step three</li>
+    </ol>
+
+    <!-- DIVS AND SPANS -->
+    <h2>Containers</h2>
+    <div style="background-color: lightblue; padding: 10px;">
+        <p>This paragraph is inside a &lt;div&gt; element.</p>
+        <p>Divs are used to group content together.</p>
+    </div>
+
+    <p>This is a <span style="color: red;">span element</span> inside a paragraph.</p>
+
+    <!-- TABLES -->
+    <h2>Tables</h2>
+    <table border="1" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>San Francisco</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- FORMS -->
+    <h2>Forms</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message"></textarea><br><br>
+
+        <label for="color">Favorite color:</label><br>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- HORIZONTAL RULE -->
+    <hr>
+
+    <!-- EXERCISES -->
+    <h2>Practice Exercises</h2>
+    <ol>
+        <li>Add a new paragraph with your own text</li>
+        <li>Create a list of your 3 favorite hobbies</li>
+        <li>Add a link to your favorite website</li>
+        <li>Create a table with your favorite books (title, author, year)</li>
+    </ol>
+
+    <hr>
+
+    <footer>
+        <p><em>Keep learning! Next, check out css_basics.css to learn about styling.</em></p>
+    </footer>
+</body>
+</html>
