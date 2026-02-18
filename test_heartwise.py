@@ -52,6 +52,10 @@ class TestHeartHealthTracker(unittest.TestCase):
         self.assertEqual(len(recent_readings), 2)
         self.assertEqual(recent_readings[0]["heart_rate"], 75)
         self.assertEqual(recent_readings[1]["heart_rate"], 80)
+        
+        # Test limit=0 edge case
+        zero_readings = self.tracker.get_readings(limit=0)
+        self.assertEqual(len(zero_readings), 0)
     
     def test_average_heart_rate(self):
         """Test calculating average heart rate"""

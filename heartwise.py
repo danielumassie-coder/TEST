@@ -64,8 +64,10 @@ class HeartHealthTracker:
         Returns:
             List of reading records
         """
-        if limit:
+        if limit is not None and limit > 0:
             return self.data[-limit:]
+        elif limit == 0:
+            return []
         return self.data
     
     def get_average_heart_rate(self) -> Optional[float]:

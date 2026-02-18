@@ -2,7 +2,6 @@
   "app_name": "Heartwise",
   "version": "1.0.0",
   "description": "A simple heart health monitoring application",
-  "data_file": "heart_data.json",
   "settings": {
     "normal_heart_rate_min": 60,
     "normal_heart_rate_max": 100,
